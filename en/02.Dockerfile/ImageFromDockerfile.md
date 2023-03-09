@@ -1,0 +1,1 @@
+# Create a docker image based on ubuntu that pings google.com 
