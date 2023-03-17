@@ -50,7 +50,7 @@ Nous précisons, sous la clé volumes, que le fichier de configuration logstash.
 
 ## Fichier de configuration de Logstash
 
-Nous allons tout dabord définir un fichier de configuration pour Logstash. Dans le répertoire *elk* (ou se trouve le fichier compose.yml), créez le fichier *logstash.conf* avec le contenu suivant
+Nous allons tout dabord définir un fichier de configuration pour Logstash. Dans le répertoire *elk* (ou se trouve le fichier docker-compose.yml), créez le fichier *logstash.conf* avec le contenu suivant
 
 ```
 input {
@@ -105,7 +105,7 @@ Ce fichier peu sembler un peu compliqué. Il peut être découpé en 3 parties:
 Vous pouvez ensuite lancer la stack avec la commande suivante
 
 ```
-docker compose up -d
+docker-compose up -d
 ```
 
 Une fois les images récupérées sur le Docker Hub, le lancement de l'application peut prendre quelques dizaines de secondes.
@@ -113,7 +113,7 @@ Une fois les images récupérées sur le Docker Hub, le lancement de l'applicati
 Vérifiez ensuite que les 3 services ont été lancés:
 
 ```
-docker compose ps
+docker-compose ps
 ```
 
 L'interface web de Kibana est alors accessible sur le port 5601 de la machine hôte (nous y reviendrons par la suite)
