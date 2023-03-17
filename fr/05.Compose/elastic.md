@@ -18,7 +18,7 @@ Note: nous considérerons que les fichiers de log sont générés par un serveur
 
 ## Définition de l'application dans un fichier au format Compose
 
-Afin de définir notre stack ELK, créez un répertoire *elk* et, à l'intérieur de celui-ci, le fichier *compose.yml* avec le contenu suivant:
+Afin de définir notre stack ELK, créez un répertoire *elk* et, à l'intérieur de celui-ci, le fichier *docker-compose.yml* avec le contenu suivant:
 
 ```
 services:
